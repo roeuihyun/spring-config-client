@@ -6,3 +6,10 @@ spring:
     name: configtest-dev
   config:
     import: optional:configserver:http://localhost:9900
+
+---
+management:
+  endpoint:
+    web:
+      exposure:
+        include: refresh
